@@ -12,7 +12,17 @@ spring:
       queue: zipkin
   sleuth:
     sampler:
-      percentage: 0.2
+      percentage: 0.2  
+  redis:
+    remote: false        #cachecloud 获取
+    host: 192.168.7.108
+    port: 6379
+    password:
+  rabbitmq:
+    host: 192.168.7.108
+    port: 5672
+    username: guest
+    password: guest
 
 # 分库分表支持
 sharding:
